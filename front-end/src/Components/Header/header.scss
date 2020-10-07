@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap");
+
+.banner img {
+  margin-top: 60px;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  width: 92%;
+}
+
+.prodcuts-header {
+  margin-top: 45px;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  width: 92%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.bread {
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  //styleName: t1-r;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #8c8c8c;
+}
+
+strong {
+  //styleName: t1-b;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
+  padding-left: 6px;
+}
+
+.filter {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Neue Machina;
+  margin: auto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+  background-color: transparent;
+  border: none;
+}
+
+.order {
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: right;
+}
+
+.order button {
+  width: 14vw;
+  //styleName: t1-r;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #8c8c8c;
+  background-color: transparent;
+  border: none;
+}
+
+.down-arrow1 {
+  padding-left: 5px;
+}
+
+.down-arrow {
+  position: absolute;
+  right: 50px;
+  padding-top: 5px;
+}
+.right-arrow {
+  position: absolute;
+  right: 50px;
+}
+
+@media (max-width: 1200px) {
+  .down-arrow {
+    padding-left: 20%;
+  }
+}
+@media (max-width: 1070px) {
+  .down-arrow {
+    padding-left: 10%;
+  }
+}
+
+.responsive-header {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .prodcuts-header {
+    display: none;
+  }
+  .responsive-header {
+    display: contents;
+  }
+  .bread {
+    margin-top: 33px;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    width: 92%;
+    display: flex;
+    justify-content: center;
+  }
+  .filter button {
+    margin-top: 27px;
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+    width: 85%;
+    height: 36px;
+    justify-content: left;
+    text-align: left;
+    border: 2px solid #8c8c8c;
+    border-radius: 6px;
+  }
+  .order {
+    justify-content: center;
+  }
+  .order button {
+    margin-top: 21px;
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+    width: 85%;
+    height: 36px;
+    text-align: left;
+    align-content: center;
+    border: 2px solid #f0f0f0;
+    border-radius: 3px;
+  }
+  .order img {
+    padding-top: 4px;
+    position: absolute;
+    right: 50px;
+  }
+}

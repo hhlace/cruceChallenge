@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap");
+
+.container-fluid {
+  padding-left: 4vw;
+  padding-right: 4vw;
+  margin-top: 51px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row {
+  overflow: hidden;
+}
+
+.product {
+  margin-bottom: 54px;
+}
+
+.product-image {
+  width: 210px;
+  height: 288px;
+}
+
+.prod-pic {
+  width: 100%;
+}
+
+.title {
+  //styleName: btn;
+  font-family: Neue Machina;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: #7d5a94;
+}
+
+.name {
+  //styleName: t1-r;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: #000000;
+}
+
+.price {
+  margin-top: 12px;
+}
+
+.fee-quantity {
+  //styleName: t1-r;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+
+.fee {
+  //styleName: h5;
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.final-price {
+  margin-top: 6px;
+}
+
+.final {
+  //styleName: t1-r;
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.strikethrough {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  color: #8c8c8c;
+  margin-left: 6px;
+}
+
+.finalRedPrice {
+  //styleName: t1-b;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #ec2227;
+}
+
+.cart {
+  margin-top: 12px;
+  border: 2px solid #76b043;
+  box-sizing: border-box;
+  border-radius: 6px;
+  height: 48px;
+  width: 60px;
+  top: 126px;
+  border-radius: 6px;
+}
+
+.cart img {
+  height: 22px;
+  width: 26.00029945373535px;
+  left: 4px;
+  top: 8px;
+  border-radius: 0px;
+}
+
+@media (max-width: 576px) {
+  .product {
+    display: flex;
+  }
+  .product-image {
+    width: 120px;
+    height: 164px;
+  }
+  .cart {
+    display: none;
+  }
+  .data {
+    padding-left: 12px;
+  }
+  .name .fee-quantity .final .strikethrough .finalRedPrice {
+    //styleName: t2-r;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .fee {
+    //styleName: t1-b;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
