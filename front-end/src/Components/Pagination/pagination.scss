@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 69px;
+}
+
+.pagination {
+  width: 300px;
+  height: 36px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  //styleName: btn;
+  font-family: "Concert One";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  border: none;
+  background: none;
+  color: #8c8c8c;
+}
+
+.selected {
+  width: 36px;
+  height: 36px;
+  border: 2px solid #f26522;
+  border-radius: 12px;
+  color: #000000;
+}

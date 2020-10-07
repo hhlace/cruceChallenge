@@ -1,0 +1,24 @@
+import React from "react";
+import leftArrow from "../../../assets/leftPArrow.png";
+import rigthArrow from "../../../assets/rightPArrow.png";
+import "./pagination.scss";
+
+export default () => {
+  return (
+    <div className="footer">
+      <div className="pagination">
+        <button>
+          <img src={leftArrow} alt="prev" />
+        </button>
+        <button>4</button>
+        <button>5</button>
+        <button className="selected">6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>
+          <img src={rigthArrow} alt="next" />
+        </button>
+      </div>
+    </div>
+  );
+};

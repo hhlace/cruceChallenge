@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
 
 .banner img {
   margin-top: 60px;
@@ -57,7 +58,7 @@ strong {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Neue Machina;
+  font-family: "Concert One";
   margin: auto;
   font-size: 16px;
   font-style: normal;
@@ -98,21 +99,16 @@ strong {
 .down-arrow {
   position: absolute;
   right: 50px;
-  padding-top: 5px;
+  padding-top: 6px;
 }
 .right-arrow {
   position: absolute;
   right: 50px;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 1320px) {
   .down-arrow {
-    padding-left: 20%;
-  }
-}
-@media (max-width: 1070px) {
-  .down-arrow {
-    padding-left: 10%;
+    right: 70px;
   }
 }
 
@@ -164,5 +160,11 @@ strong {
     padding-top: 4px;
     position: absolute;
     right: 50px;
+  }
+  .banner img {
+    margin-top: 24px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
   }
 }

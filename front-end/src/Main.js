@@ -1,13 +1,15 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Header from "./Components/Header/Header";
-import Products from "./Components/Products/Products";
+import ProductsContainer from "./Components/Products/ProductsContainer";
+import Pagination from "./Components/Pagination/Pagination";
 
 export default (props) => {
   return (
     <div id="main">
       <Header />
-      <Products />
+      <ProductsContainer />
+      <Pagination />
     </div>
   );
 };

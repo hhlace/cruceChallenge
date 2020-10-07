@@ -10,7 +10,7 @@ Products.init(
       allowNull: false,
     },
     price: {
-      type: S.DECIMAL(9, 2),
+      type: S.INTEGER,
       allowNull: false,
     },
     image: {

@@ -1,7 +1,14 @@
+import { RECEIVE_PRODUCTS } from "./constants";
+
 const initialState = {
-  cart: {},
+  products: {},
 };
 
 export default (state = initialState, action) => {
-  return state;
+  switch (action.type) {
+    case RECEIVE_PRODUCTS:
+      return { ...state, products: action.products };
+    default:
+      return state;
+  }
 };
