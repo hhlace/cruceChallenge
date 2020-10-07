@@ -52,6 +52,7 @@ export default ({ product }) => {
         ) : (
           <div className="price">
             Final: <h5 className="no-stock">Artículo sin stock</h5>
+            <br />
             <button className="ver-articulo">Ver artículo</button>
           </div>
         )}

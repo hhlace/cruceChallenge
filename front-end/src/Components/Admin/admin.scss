@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+
+.admin {
+  display: flex;
+  justify-content: space-around;
+}
+
+.admin button {
+  font-family: "Concert One";
+  margin-top: 12px;
+  width: 151px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  border: 2px solid #000000;
+  box-shadow: 3px 3px 0px #000000;
+  border-radius: 6px;
+  a {
+    color: #000000;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.admin h3 {
+  font-family: "Concert One";
+  margin-top: 12px;
+}
