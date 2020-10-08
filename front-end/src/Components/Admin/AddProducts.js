@@ -1,5 +1,6 @@
 import React, { useReducer } from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
 import { addProduct } from "../../Redux/Reducers/actions";
 
 const initialState = {
@@ -27,7 +28,6 @@ export default () => {
     dispatch(addProduct(state));
   };
   const { image, name, price, discount, stock } = state;
-  console.log("estado ", state);
   return (
     <div>
       <nav class="navbar navbar-expand-sm bg-light navbar-light">
@@ -136,9 +136,11 @@ export default () => {
                     <button type="submit" class="btn btn-primary">
                       Guardar
                     </button>
-                    <button type="submit" class="btn btn-light">
-                      Volver
-                    </button>
+                    <Link to="/admin">
+                      <button type="submit" class="btn btn-light">
+                        Volver
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>

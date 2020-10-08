@@ -9,7 +9,6 @@ export default () => {
     dispatch(fetchProducts());
   }, [products]);
   const products = useSelector((store) => store.products);
-  console.log(products);
   return (
     <div>
       <nav className="navbar navbar-expand-sm bg-light navbar-light">

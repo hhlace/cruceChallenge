@@ -16,9 +16,7 @@ export const fetchProducts = () => (dispatch) => {
 };
 
 export const addProduct = (newProduct) => {
-  return axios
-    .post("/products/add", newProduct)
-    .then((res) => console.log(res));
+  return axios.post("/products/add", newProduct);
 };
 
 export const deleteProduct = (id) => (dispatch) => {
