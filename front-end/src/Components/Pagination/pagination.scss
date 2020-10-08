@@ -33,3 +33,25 @@ button {
   border-radius: 12px;
   color: #000000;
 }
+
+.up {
+  position: fixed;
+  bottom: 0px;
+  right: 126px;
+  width: 120px;
+  height: 60px;
+  background: #fdb913;
+  border-radius: 120px 120px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  .upArrow {
+    width: 14px;
+    margin-left: 52px;
+  }
+  .subir {
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+}

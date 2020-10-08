@@ -10,7 +10,7 @@ export default () => {
   const [image, setImage] = useState("");
   const [name, setName] = useState("");
   const [price, setPrice] = useState("");
-  const [discount, setDiscount] = useState("");
+  const [discount, setDiscount] = useState(0);
   const [stock, setStock] = useState("");
   const params = useParams();
 

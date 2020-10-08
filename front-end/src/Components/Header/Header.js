@@ -7,7 +7,7 @@ import "./header.scss";
 
 export default () => {
   return (
-    <div className="header">
+    <div className="header" id="header">
       <div className="responsive-header">
         <div className="bread">
           Inicio / Juguetes /<strong>Funko Pop</strong>

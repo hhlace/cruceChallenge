@@ -1,6 +1,7 @@
 import React from "react";
 import fotito from "../../../assets/4048.png";
 import cart from "../../../assets/cart.png";
+import discount from "../../../assets/discount.png";
 import "./products.scss";
 
 export default ({ product }) => {
@@ -10,6 +11,12 @@ export default ({ product }) => {
     <div className="col-12 col-sm-6 col-md-4 product">
       <div className="product-image">
         <img src={product.image} className="prod-pic" />
+        {product.discount > 0 ? (
+          <>
+            <img src={discount} className="discount" />
+            <span className="discount-number">{product.discount} %</span>
+          </>
+        ) : null}
       </div>
       <div className="data">
         <div className="article">
