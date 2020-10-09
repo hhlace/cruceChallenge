@@ -30,41 +30,41 @@ export default () => {
   const { image, name, price, discount, stock } = state;
   return (
     <div>
-      <nav class="navbar navbar-expand-sm bg-light navbar-light">
-        <a class="navbar-brand" href="http://www.e-cruce.com">
+      <nav className="navbar navbar-expand-sm bg-light navbar-light">
+        <a className="navbar-brand" href="http://www.e-cruce.com">
           <img
             src="http://www.e-cruce.com/wp-content/uploads/2019/10/cruce.svg"
             alt="logo"
           />
         </a>
 
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/">
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <a className="nav-link" href="/">
               Catalogo
             </a>
           </li>
         </ul>
       </nav>
-      <div class="container-fluid mt-4">
-        <div class="card">
-          <div class="card-body">
+      <div className="container-fluid mt-4">
+        <div className="card">
+          <div className="card-body">
             <form onSubmit={handleSubmit}>
-              <div class="row">
-                <div class="col mb-4">
+              <div className="row">
+                <div className="col mb-4">
                   <img
                     src={image || "http://via.placeholder.com/150x150"}
-                    class="rounded"
+                    className="rounded"
                     style={{ width: 150, height: 150 }}
                   />
                 </div>
               </div>
-              <div class="row">
-                <div class="col-sm-3">
-                  <div class="form-group">
+              <div className="row">
+                <div className="col-sm-3">
+                  <div className="form-group">
                     <label>URL de la imagen</label>
                     <input
-                      class="form-control"
+                      className="form-control"
                       type="url"
                       name="image"
                       placeholder="http://via.placeholder.com/150x150"
@@ -74,12 +74,12 @@ export default () => {
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-sm-3">
-                  <div class="form-group">
+              <div className="row">
+                <div className="col-sm-3">
+                  <div className="form-group">
                     <label>Nombre del producto</label>
                     <input
-                      class="form-control"
+                      className="form-control"
                       type="text"
                       name="name"
                       onChange={onChange}
@@ -88,12 +88,12 @@ export default () => {
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-sm-3">
-                  <div class="form-group">
+              <div className="row">
+                <div className="col-sm-3">
+                  <div className="form-group">
                     <label>Precio</label>
                     <input
-                      class="form-control"
+                      className="form-control"
                       type="number"
                       name="price"
                       onChange={onChange}
@@ -102,12 +102,12 @@ export default () => {
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-sm-3">
-                  <div class="form-group">
+              <div className="row">
+                <div className="col-sm-3">
+                  <div className="form-group">
                     <label>Descuento</label>
                     <input
-                      class="form-control"
+                      className="form-control"
                       type="number"
                       name="discount"
                       onChange={onChange}
@@ -116,12 +116,12 @@ export default () => {
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-sm-3">
-                  <div class="form-group">
+              <div className="row">
+                <div className="col-sm-3">
+                  <div className="form-group">
                     <label>Stock</label>
                     <input
-                      class="form-control"
+                      className="form-control"
                       type="number"
                       name="stock"
                       onChange={onChange}
@@ -130,17 +130,24 @@ export default () => {
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-sm-12">
-                  <div class="form-group">
-                    <button type="submit" class="btn btn-primary">
+              <div className="row">
+                <div className="col-sm-12">
+                  <div className="form-group">
+                    <button type="submit" className="btn btn-primary">
                       Guardar
                     </button>
                     <Link to="/admin">
-                      <button type="submit" class="btn btn-light">
+                      <button type="submit" className="btn btn-light">
                         Volver
                       </button>
                     </Link>
+                    <div
+                      className="alert alert-secondary"
+                      role="alert"
+                      style={{ display: "none" }}
+                    >
+                      Producto agregado!
+                    </div>
                   </div>
                 </div>
               </div>

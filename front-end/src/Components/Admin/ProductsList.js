@@ -27,10 +27,10 @@ export default () => {
           </li>
         </ul>
       </nav>
-      <div class="container-fluid mt-4">
-        <div class="card">
-          <div class="card-body">
-            <table class="table table-hover">
+      <div className="container-fluid mt-4">
+        <div className="card">
+          <div className="card-body">
+            <table className="table table-hover">
               <thead>
                 <tr>
                   <th>Nombre</th>
@@ -79,6 +79,9 @@ export default () => {
             </table>
           </div>
         </div>
+        <Link to="/admin">
+          <button>Volver a Admin</button>
+        </Link>
       </div>
     </div>
   );
